@@ -1,0 +1,280 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0e0a;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .terminal-container {
+            width: 100%;
+            max-width: 800px;
+            background: #1a1a1a;
+            border: 2px solid #00ff00;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .terminal-header {
+            background: #0d0d0d;
+            padding: 10px 15px;
+            border-bottom: 2px solid #00ff00;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .terminal-button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .btn-red { background: #ff5f56; }
+        .btn-yellow { background: #ffbd2e; }
+        .btn-green { background: #27c93f; }
+
+        .terminal-title {
+            margin-left: 15px;
+            font-size: 14px;
+            color: #00ff00;
+        }
+
+        .terminal-body {
+            padding: 30px;
+        }
+
+        .ascii-art {
+            color: #00ff00;
+            font-size: 10px;
+            line-height: 1;
+            margin-bottom: 20px;
+            text-align: center;
+            white-space: pre;
+        }
+
+        .prompt-line {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            color: #00ff00;
+        }
+
+        .prompt-symbol {
+            color: #00ff00;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #00ff00;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 28px;
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        .subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #00cc00;
+            font-size: 14px;
+        }
+
+        .input-group {
+            margin: 30px 0;
+        }
+
+        .input-label {
+            display: block;
+            margin-bottom: 10px;
+            color: #00ff00;
+        }
+
+        .input-wrapper {
+            display: flex;
+            gap: 10px;
+            background: #0a0e0a;
+            border: 2px solid #00ff00;
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+        input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            font-size: 16px;
+            padding: 10px;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #006600;
+        }
+
+        button {
+            background: #00ff00;
+            color: #0a0e0a;
+            border: none;
+            padding: 10px 20px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        button:hover {
+            background: #00cc00;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .status-message {
+            margin-top: 20px;
+            padding: 15px;
+            border-left: 3px solid #00ff00;
+            background: #0d0d0d;
+            display: none;
+            animation: fadeIn 0.3s;
+        }
+
+        .status-message.show {
+            display: block;
+        }
+
+        .status-message.error {
+            border-color: #ff0000;
+            color: #ff6666;
+        }
+
+        .status-message.success {
+            border-color: #00ff00;
+            color: #00ff00;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .developer-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #00ff00;
+        }
+
+        .dev-header {
+            color: #00ff00;
+            margin-bottom: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .dev-info {
+            background: #0d0d0d;
+            padding: 20px;
+            border-radius: 4px;
+            border: 1px solid #00ff00;
+        }
+
+        .dev-line {
+            display: flex;
+            align-items: center;
+            margin: 12px 0;
+            color: #00ff00;
+        }
+
+        .dev-line i {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        .dev-line a {
+            color: #00ff00;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .dev-line a:hover {
+            color: #00cc00;
+            text-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+        }
+
+        .coffee-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #00ff00;
+            color: #0a0e0a;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: all 0.3s;
+        }
+
+        .coffee-btn:hover {
+            background: #00cc00;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .loading.show {
+            display: block;
+        }
+
+        .loading i {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 600px) {
+            .terminal-body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .input-wrapper {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
