@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVERA DL - GitHub Repository Downloader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <span class="terminal-button btn-red"></span>
+            <span class="terminal-button btn-yellow"></span>
+            <span class="terminal-button btn-green"></span>
+            <span class="terminal-title">NOVERA-DL@terminal:~</span>
+        </div>
+        
+        <div class="terminal-body">
+            <div class="ascii-art">
+ _   _  _____  _   _ ___________  ___   ______ _     
+| \ | ||  _  || | | |  ___| ___ \/ _ \  |  _  \ |    
+|  \| || | | || | | | |__ | |_/ / /_\ \ | | | | |    
+| . ` || | | || | | |  __||    /|  _  | | | | | |    
+| |\  |\ \_/ /\ \_/ / |___| |\ \| | | | | |/ /| |____
+\_| \_/ \___/  \___/\____/\_| \_\_| |_/ |___/ \_____/
+            </div>
+
+            <div class="prompt-line">
+                <span class="prompt-symbol">$</span>
+                <span>GitHub Repository Downloader v1.0</span>
+            </div>
+
+            <div class="subtitle">
+                >> Fast & Easy ZIP Download for GitHub Repos <<
+            </div>
+
+            <div class="input-group">
+                <label class="input-label">
+                    <i class="fab fa-github"></i> Enter GitHub Repository URL:
+                </label>
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="repoUrl" 
+                        placeholder="https://github.com/username/repository"
+                        autocomplete="off"
+                    >
+                    <button onclick="downloadRepo()">
+                        <i class="fas fa-download"></i>
+                        Download ZIP
+                    </button>
+                </div>
+            </div>
+
+            <div class="loading" id="loading">
+                <i class="fas fa-spinner fa-2x"></i>
+                <p style="margin-top: 10px;">Processing...</p>
+            </div>
+
+            <div class="status-message" id="statusMessage"></div>
+
+            <div class="developer-section">
+                <div class="dev-header">
+                    <i class="fas fa-code"></i> DEVELOPER INFO
+                </div>
+                <div class="dev-info">
+                    <div class="dev-line">
+                        <i class="fas fa-user"></i>
+                        <span><strong>Name:</strong> LATIFUL HASSAN ZIHAN</span>
+                    </div>
+                    <div class="dev-line">
+                        <i class="fab fa-telegram"></i>
+                        <span><strong>Telegram:</strong> <a href="https://t.me/alwayszihan" target="_blank">@ALWAYSZIHAN</a></span>
+                    </div>
+                    <div class="dev-line">
+                        <i class="fab fa-github"></i>
+                        <span><strong>GitHub:</strong> <a href="https://github.com/latifulhassanzihan" target="_blank">github.com/latifulhassanzihan</a></span>
+                    </div>
+                    <div style="text-align: center;">
+                        <a href="https://buymecoffee.com/alwayszihan" target="_blank" class="coffee-btn">
+                            <i class="fas fa-coffee"></i>
+                            Buy Me a Coffee
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
