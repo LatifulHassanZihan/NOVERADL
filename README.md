@@ -81,7 +81,7 @@ $ success: repository-main.zip downloaded!
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/latifulhassanzihan/novera-dl.git
+$ git clone https://github.com/latifulhassanzihan/NOVERADL.git
 
 # Navigate to directory
 $ cd novera-dl
