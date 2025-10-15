@@ -179,7 +179,39 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
-        .developer-card {
+.developer-section {
+    margin: 30px 0;
+}
+
+.info-box {
+    background: rgba(0, 255, 0, 0.05);
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.info-box p {
+    margin-bottom: 10px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.info-box ul li {
+    margin: 8px 0;
+    color: #00dd00;
+}
+
+.info-box ul li::before {
+    content: ">";
+    margin-right: 10px;
+    color: #00ff00;
+    font-weight: 700;
+}
+ .developer-card {
     background: rgba(0, 255, 0, 0.05);
     border: 1px solid #00ff00;
     border-radius: 5px;
